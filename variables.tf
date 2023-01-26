@@ -10,11 +10,6 @@ variable "aws_secret_key" {
 }
 
 
-####Databricks
-
-variable "databricks_account_username" {}
-variable "databricks_account_password" {}
-variable "databricks_account_id" {}
 
 variable "tags" {
   default = {}
@@ -28,7 +23,3 @@ variable "region" {
   default = "eu-west-1"
 }
 
-
-locals {
-  prefix = "databricks_project"
-}
